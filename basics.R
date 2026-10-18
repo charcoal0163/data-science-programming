@@ -1,5 +1,3 @@
-# project: uci repository -> datasets (features > 10, instances > 500)
-
 s = 5
 d = 6
 s + d
