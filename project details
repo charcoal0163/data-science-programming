@@ -7,3 +7,11 @@ task one: select a dataset (once approved, start the report)
   
 2, dataset description
   in a paragraph characteristics, instances, features, associated tasks, "as shown in table 1". table of features - type, desc (table 1: dataset features)
+
+sections:
+1 - technical report (revised periodically with the professor, 5 pts)
+2 - code (5 pts design for the presentation)
+3 - presentation (4 pts for two questions per person, 1 pt for language - in front of everyone)
+
+quiz 1: 10 pts
+quiz 2: 5 pts
