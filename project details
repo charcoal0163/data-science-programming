@@ -1,0 +1,7 @@
+task one: select a dataset (once approved, start the report)
+
+1, introduction in the article
+  talk about the dataset, what is it, what it includes, what the domain is
+  
+2, dataset description
+  in a paragraph characteristics, instances, features, associated tasks, "as shown in table 1". table of features - type, desc (table 1: dataset features)
