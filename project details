@@ -1,4 +1,6 @@
 project: get a dataset from uci repository -> datasets (features > 10, instances > 500)
+https://archive.ics.uci.edu/dataset/320/student+performance
+https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success
 
 task one: select a dataset (once approved, start the report)
 
