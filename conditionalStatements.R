@@ -85,29 +85,33 @@ if(count == 2){
   print("not prime")
 }
 
-
-
-sum = 0
-count = 0
-prime = 0
-flag = TRUE
+# exercise 5 + 6: find the number of primes and their sum
+sums = 0
+counts = 0
+primes = 0
 array = c(11:20)
 for(t in 1:10){
-  for(k in 1:array[t]){
-    if(array[t] %% k == 0){
-      flag = FALSE
-      break
+  x = array[t]
+  sums = sums + x
+  flag = TRUE
+  if(x <= 1){
+    flag = FALSE
+  }else{
+    for(k in 2:(x - 1)){
+      if(x %% k == 0){
+        flag = FALSE
+        break
+      }
+    }
+    if(flag){
+      counts = counts + 1
+      primes = primes + array[t]
     }
   }
-  if(flag){
-    count = count + 1
-    prime = prime + array[t]
-  }
-  sum = sum + array[t]
 }
-sum
-count
-
+sums
+counts
+primes
 
 # matrices! (nested for loops)
 mat = matrix(1:10, 2)
