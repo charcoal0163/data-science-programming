@@ -86,6 +86,7 @@ if(count == 2){
 }
 
 # exercise 5 + 6: find the number of primes and their sum
+  # version 1:
 sums = 0
 counts = 0
 primes = 0
@@ -112,6 +113,22 @@ for(t in 1:10){
 sums
 counts
 primes
+
+  # version 2:
+array = c(11:20)
+for(t in array){
+  count = 0
+  for(k in 1:t){
+    if(t %% k == 0){
+        count = count + 1
+      }
+    }
+    if(count == 2){
+      print("prime")
+    }else{
+      print("not")
+    }
+  }
 
 # matrices! (nested for loops)
 mat = matrix(1:10, 2)
