@@ -34,3 +34,4 @@ sd(frame $ speed) # returns the amount of variation of the values
 scale(frame $ speed)
 head(scale(frame[1]), 5) # returns the first five values
 quantile(frame $ dist) # where 0% is the minimum value, 100% is the maximum value, 25% is where a quarter of the values is less than the founded value, 75% is where three quarters of the values is less than the founded value, and 50% is the halfway mark
+summary(frame $ speed)
