@@ -9,7 +9,7 @@ neededVariables = frame[, c("Age at enrollment", "Previous qualification (grade)
 
 # create a summary of all required data
 sumAge = as.numeric(summary(frame $ `Age at enrollment`))
-sumQual = as.numeric(summary(frame $ `Previous qualification`))
+sumQual = as.numeric(summary(frame $ `Previous qualification (grade)`))
 sumAdmis = as.numeric(summary(frame $ `Admission grade`))
 sumCurAp1 = as.numeric(summary(frame $ `Curricular units 1st sem (approved)`))
 sumCurGrade1 = as.numeric(summary(frame $ `Curricular units 1st sem (grade)`))
@@ -20,7 +20,7 @@ sumInf = as.numeric(summary(frame $ `Inflation rate`))
 
 # find standard deviation of all required data
 stddevAge = sd(frame $ `Age at enrollment`)
-stddevQual = sd(frame $ `Previous qualification`)
+stddevQual = sd(frame $ `Previous qualification (grade)`)
 stddevAdmis = sd(frame $ `Admission grade`)
 stddevCurAp1 = sd(frame $ `Curricular units 1st sem (approved)`)
 stddevCurGrade1 = sd(frame $ `Curricular units 1st sem (grade)`)
@@ -30,10 +30,10 @@ stddevEmp = sd(frame $ `Unemployment rate`)
 stddevInf = sd(frame $ `Inflation rate`)
 
 # create a table of all information
-final = cbind(
+final = rbind(
   "Measure" = c("Min", "1st Quan", "Median", "Mean", "3rd Quan", "Max", "Std. Dev."),
   "Age" = c(sumAge, stddevAge),
-  "Qualifications" = c(sumQual, stddevQual),
+  "Qualifications (grade)" = c(sumQual, stddevQual),
   "Admission Grade" = c(sumAdmis, stddevAdmis),
   "C.U. 1 Sem (approved)" = c(sumCurAp1, stddevCurAp1),
   "C.U. 1 Sem (grade)" = c(sumCurGrade1, stddevCurGrade1),
