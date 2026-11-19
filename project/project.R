@@ -2,6 +2,7 @@
 
 # create a dataframe 
 path = "C:\\Users\\Dalba\\OneDrive\\Desktop\\university\\20261\\dsp\\data.xlsx"
+    # notice! this path will only work on my device, download the document and copy the path from your own device before running this code
 frame = read_excel(path, header = TRUE)
 
 # specify what variables we need for analysis
